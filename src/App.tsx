@@ -5,15 +5,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import UniformOrderForm from "./components/UniformOrderForm";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <>
-      <div className="w-full h-full grid grid-cols-12 ">
-        <div className="col-span-12 bg-white px-4 py-4">
-          <UniformOrderForm />
-        </div>
-      </div>
+     <div className="w-full h-full flex">
+  {/* Sidebar - fixed width */}
+  <div className="w-[300px] bg-white ">
+    <Sidebar />
+  </div>
+
+  {/* Main content - takes rest of the width */}
+  <div className="flex bg-white ">
+    <UniformOrderForm />
+  </div>
+</div>
+
     </>
   );
 }

@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ChevronDown, ChevronUp, X, ImageIcon } from "lucide-react";
+import { ChevronDown, ChevronUp, X, ImageIcon,ArrowLeft  } from "lucide-react";
 import {
   Collapsible,
   CollapsibleContent,
@@ -112,9 +112,15 @@ export default function UniformOrderForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 min-h-screen">
+    <div className="max-w-7xl mx-auto p-6 bg-gray-50 min-h-screen">
+       <p className="flex items-center text-gray-700 cursor-pointer mb-4">
+  <ArrowLeft className="w-5 h-5 mr-2" />
+  back to dashboard
+</p>
+
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger className="w-full">
+        
           <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm border mb-6">
             <h2 className="text-lg font-medium text-gray-900">
               Order Information
