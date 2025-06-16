@@ -151,6 +151,7 @@ console.log("size",sizes)
                     className="relative bg-white overflow-hidden cursor-move select-none"
                     style={{ 
                       width: "1200px",
+                      height:"420px"
                     }}
                     onMouseDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
@@ -158,7 +159,7 @@ console.log("size",sizes)
                     onMouseLeave={handleMouseUp}
                     onWheel={handleWheel}
                   >
-<svg viewBox="0 0 1200 1150" style={{margin:"auto", marginLeft: '-50px'}} fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 1150" style={{margin:"auto",marginLeft:"60px",marginTop:"30px",height:"350px"}} fill="none" xmlns="http://www.w3.org/2000/svg">
 
 {/* <rect style={{maxWidth:"100%",width:"100%"}} fill="white"/> */}
 <rect width="1365.33" transform="translate(0 -32)" fill="white" style={{width:"100%",maxWidth:"100%"}}/>
@@ -254,7 +255,7 @@ console.log("size",sizes)
                     ))}
 
                     {selectedLogoIndex !== -1 && logos[selectedLogoIndex] && (
-                      <div className="absolute bottom-6 left-4 text-xs text-gray-500 bg-white bg-opacity-90 px-3 py-2 rounded-lg shadow-sm">
+                      <div className="absolute bottom-6 left-4 text-xs text-gray-500 bg-white bg-opacity-90 px-3 py-2 rounded-lg shadow-sm" style={{width:"510px"}}>
                         <div>Click logo to select • Drag to move • Scroll to resize</div>
                         <div className="text-blue-600 font-medium">
                           Logo {selectedLogoIndex + 1} selected (Size: {sizes[selectedLogoIndex]}px)
@@ -264,7 +265,7 @@ console.log("size",sizes)
                     {selectedLogoIndex !== -1 && logos[selectedLogoIndex] && (
                       <Slider  onValueChange={(val)=>{
                         handleSizeChange(val[0])
-                      }} className="absolute bottom-2" defaultValue={[33]} max={100} step={1} />
+                      }} className="absolute bottom-2 left-4" defaultValue={[33]} max={100} step={1} />
                     )}
 
                   
