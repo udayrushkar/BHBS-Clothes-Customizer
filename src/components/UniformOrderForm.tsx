@@ -134,6 +134,7 @@ export default function UniformOrderForm() {
         </CollapsibleTrigger>
 
         <CollapsibleContent>
+        
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
             {/* Left Column - Form Fields */}
             <div className="space-y-6">

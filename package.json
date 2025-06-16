@@ -29,6 +29,7 @@
     "react": "^19.1.0",
     "react-color": "^2.19.3",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
     "react-window": "^1.8.11",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.8"
