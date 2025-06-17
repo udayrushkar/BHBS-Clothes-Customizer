@@ -24,6 +24,8 @@ import CoatDesigner from "./Coat";
 import MaleScrub from "./MaleScrub";
 import { ColorPicker } from "./ColorPicker";
 import FemaleScrub from "./FemaleScrub";
+import AddressMapForm from "./AddressForm";
+import Basicinformationform from "./Basicinformationform";
 
 const uniformTypes = ["Scrub", "Lab Coat"];
 const genders = ["Male", "Female"];
@@ -117,7 +119,8 @@ export default function UniformOrderForm() {
   <ArrowLeft className="w-5 h-5 mr-2" />
   back to dashboard
 </p>
-
+<Basicinformationform/>
+<AddressMapForm/>
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger className="w-full">
         

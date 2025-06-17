@@ -1,11 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { MapPin } from "lucide-react"
+import { ChevronDown, ChevronUp, MapPin } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@radix-ui/react-collapsible"
+import image from '../assets/Map.svg'
 
 const countries = [
   { value: "us", label: "United States" },
@@ -24,6 +26,8 @@ export default function AddressMapForm() {
   const [city, setCity] = useState("")
   const [postalCode, setPostalCode] = useState("")
   const [mapUrl, setMapUrl] = useState("/placeholder.svg?height=300&width=300")
+        const [isOpen, setIsOpen] = useState(true);
+  
 
   useEffect(() => {
     if (address && country && city) {
@@ -37,6 +41,21 @@ export default function AddressMapForm() {
   }
 
   return (
+    <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+      <CollapsibleTrigger className="w-full">
+    <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm border mb-6">
+        <h2 className="text-lg font-medium text-gray-900">
+              Location
+            </h2>
+            {isOpen ? (
+              <ChevronUp className="h-5 w-5 text-gray-500" />
+            ) : (
+              <ChevronDown className="h-5 w-5 text-gray-500" />
+            )}
+      
+    </div>
+    </CollapsibleTrigger>
+    <CollapsibleContent>
     <div className="mx-auto p-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left - Form Inputs */}
@@ -86,14 +105,12 @@ export default function AddressMapForm() {
         <div className="relative h-[300px] rounded-md overflow-hidden border">
           <div className="absolute max-h-[220px] inset-0 bg-gray-100">
             <img
-              src={mapUrl}
+              src={image}
               alt="Location map"
               className="w-full h-full object-cover"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="bg-black rounded-full p-2">
-                <MapPin className="h-5 w-5 text-white" />
-              </div>
+            
             </div>
           </div>
           <div className="absolute bottom-4 right-4">
@@ -104,5 +121,7 @@ export default function AddressMapForm() {
         </div>
       </div>
     </div>
+    </CollapsibleContent>
+    </Collapsible>
   )
 }
