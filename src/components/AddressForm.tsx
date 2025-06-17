@@ -102,7 +102,7 @@ export default function AddressMapForm() {
         </div>
 
         {/* Right - Map */}
-        <div className="relative h-[300px] w-[340px] rounded-md overflow-hidden border">
+        <div className="relative h-[300px] w-[340px] ml-auto rounded-md overflow-hidden border">
           <div className="absolute max-h-[220px] inset-0 bg-gray-100">
             <img
               src={image}
