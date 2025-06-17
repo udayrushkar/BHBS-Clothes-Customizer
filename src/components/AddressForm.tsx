@@ -57,9 +57,9 @@ export default function AddressMapForm() {
     </CollapsibleTrigger>
     <CollapsibleContent>
     <div className="mx-auto p-2">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
         {/* Left - Form Inputs */}
-        <div className="space-y-4">
+        <div className="space-y-4 w-[800px]">
           <div className="space-y-1">
             <Label htmlFor="address">Address</Label>
             <Input className="h-12"  id="address" value={address} onChange={(e) => setAddress(e.target.value)} />
@@ -102,16 +102,14 @@ export default function AddressMapForm() {
         </div>
 
         {/* Right - Map */}
-        <div className="relative h-[300px] rounded-md overflow-hidden border">
+        <div className="relative h-[300px] w-[340px] rounded-md overflow-hidden border">
           <div className="absolute max-h-[220px] inset-0 bg-gray-100">
             <img
               src={image}
               alt="Location map"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            
-            </div>
+           
           </div>
           <div className="absolute bottom-4 right-4">
             <Button onClick={handleGetDirections} className="bg-black text-white hover:bg-gray-800">
