@@ -51,8 +51,10 @@ export default function Basicinformationform() {
         </div>
 
         <div>
+        <Label htmlFor="businessName"  className="text-sm font-medium text-gray-700 mb-2 block">Property Type</Label>
+
           <Select>
-            <SelectTrigger className="h-12 border-1 mt-7  border-black rounded-md w-full">
+            <SelectTrigger className="h-12 border-1   border-black rounded-md w-full">
               <SelectValue placeholder=" type" />
             </SelectTrigger>
             <SelectContent>
