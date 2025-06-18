@@ -159,7 +159,7 @@ console.log("size",sizes)
                     onMouseLeave={handleMouseUp}
                     onWheel={handleWheel}
                   >
-<svg viewBox="0 0 1200 1150" style={{margin:"auto",marginLeft:"60px",marginTop:"30px",height:"350px"}} fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 1050" style={{margin:"auto",marginLeft:"-30px",marginTop:"-20px"}} fill="none" xmlns="http://www.w3.org/2000/svg">
 
 {/* <rect style={{maxWidth:"100%",width:"100%"}} fill="white"/> */}
 <rect width="1365.33" transform="translate(0 -32)" fill="white" style={{width:"100%",maxWidth:"100%"}}/>

@@ -38,7 +38,7 @@ export default function Basicinformationform() {
       </CollapsibleTrigger>
 
       <CollapsibleContent >
-      <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-4 p-4 bg-white rounded-md shadow-sm border">
+      <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-4 p-4 bg-transperant ">
 
         <div>
           <Label htmlFor="unifiedNumber"  className="text-sm font-medium text-gray-700 mb-2 block">Unified National Number</Label>
@@ -51,10 +51,9 @@ export default function Basicinformationform() {
         </div>
 
         <div>
-          <Label htmlFor="type" className="text-sm font-medium text-gray-700 mb-2 block">Type</Label>
           <Select>
-            <SelectTrigger className="h-12 border-1 border-black rounded-md w-full">
-              <SelectValue placeholder="Select type" />
+            <SelectTrigger className="h-12 border-1 mt-7  border-black rounded-md w-full">
+              <SelectValue placeholder=" type" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="main">Main</SelectItem>

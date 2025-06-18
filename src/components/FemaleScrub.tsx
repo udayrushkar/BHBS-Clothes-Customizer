@@ -160,8 +160,8 @@ console.log("size",sizes)
                     onWheel={handleWheel}
                   >
      <svg
-                      viewBox="0 0 1200 1150"
-                      style={{ margin: "auto", marginLeft: '40px',height:"350px" ,marginTop:"30px" }}
+                      viewBox="0 0 1300 950"
+                      style={{ margin: "auto", marginLeft: '-50px',marginTop:"-20px" }}
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
