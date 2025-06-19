@@ -8,6 +8,9 @@ import {
 import Sidebar from "./components/Sidebar";
 import UniformOrderForm from "./components/UniformOrderForm";
 import ArchitectureLayout from "./components/ArchitectureLayout ";
+import WherhouseForm2 from "./components/WherhouseForm2";
+import WherhouseForm1 from "./components/WherhouseForm1";
+import WherhouseForm3 from "./components/WherhouseForm3";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/uniform" />} />
             <Route path="/uniform" element={<UniformOrderForm />} />
+            <Route path="/wherhouse1" element={<WherhouseForm1/>}/>
+            <Route path="/wherhouse2" element={<WherhouseForm2/>}/>
+            <Route path="/wherhouse3" element={<WherhouseForm3/>}/>
             <Route path="/layout" element={<ArchitectureLayout/>} />
           </Routes>
         </div>

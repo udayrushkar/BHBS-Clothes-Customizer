@@ -1,7 +1,8 @@
 import { ArrowLeft } from "lucide-react";
 import Form1 from "./Form1";
-import LeftSide from "./leftside";
-import RightSide from "./rightside";
+import LeftSide from "./LeftSide";
+import RightSide from "./RightSide";
+
 
 
 
