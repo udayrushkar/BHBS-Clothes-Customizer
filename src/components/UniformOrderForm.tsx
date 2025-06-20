@@ -124,7 +124,7 @@ export default function UniformOrderForm() {
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger className="w-full">
         
-          <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm border mb-6">
+          <div className="flex items-center justify-between p-4 bg-[#dedede]  rounded-lg shadow-sm border mb-6">
             <h2 className="text-lg font-medium text-gray-900">
               Order Information
             </h2>
