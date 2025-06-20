@@ -44,7 +44,7 @@ export default function WherhouseForm1() {
     <div className="max-w-7xl mx-auto p-6 bg-gray-50 min-h-screen">
       <p className="flex items-center text-gray-700 cursor-pointer mb-4">
         <ArrowLeft className="w-5 h-5 mr-2" />
-        back to dashboard
+        Back to dashboard
       </p>
 
       <Basicinformationform />
