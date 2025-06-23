@@ -26,8 +26,9 @@ import { ColorPicker } from "./ColorPicker";
 import FemaleScrub from "./FemaleScrub";
 import AddressMapForm from "./AddressForm";
 import Basicinformationform from "./Basicinformationform";
+import Warmerjacket from "./Warmerjacket";
 
-const uniformTypes = ["Scrub", "Lab Coat"];
+const uniformTypes = ["Scrub", "Lab Coat", "Warmer Jacket"];
 const genders = ["Male", "Female"];
 const sizes = ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"];
 const selectOptions = ["T-Shirt", "Pant"];
@@ -301,7 +302,15 @@ export default function UniformOrderForm() {
                   positions={positions}
                   setPositions={setPositions}
                 />
-              ) : gender === "Male" ? (
+              ): uniformType === "Warmer Jacket" ? (
+                <Warmerjacket
+                  color1={color?.value || "#94877e"}
+                  logos={logos}
+                  positions={positions}
+                  setPositions={setPositions}
+                />
+              ) 
+              : gender === "Male" ? (
                 <MaleScrub
                   color1={color?.value || "#ffffff"}
                   showSecondColor={showSecondColor}
@@ -317,11 +326,12 @@ export default function UniformOrderForm() {
                   selectValue={selectValue}
                   logos={logos}
                 />
-              )}
+              )
+              }
             </div>
           </div>
 
-          {uniformType != "Lab Coat" && (
+          {uniformType != "Lab Coat"  && uniformType != "Warmer Jacket" &&  (
             <div className="flex  items-end gap-8 mb-6">
               <Button
                 type="button"
