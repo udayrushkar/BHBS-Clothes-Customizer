@@ -31,8 +31,8 @@ export default function Basicinformationform() {
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen}>
       <CollapsibleTrigger className="w-full">
-        <div className="flex items-center justify-between p-4 bg-[#dedede] rounded-lg shadow-sm border mb-6">
-          <h2 className="text-lg font-medium text-gray-900">Basic Information</h2>
+        <div className="flex items-center justify-between p-1 bg-[#EEEEEE]  rounded-md shadow-sm border mb-6">
+          <h2 className="text-lg pl-2 font-medium text-gray-900">Basic Information</h2>
           {isOpen ? <ChevronUp className="h-5 w-5 text-gray-500" /> : <ChevronDown className="h-5 w-5 text-gray-500" />}
         </div>
       </CollapsibleTrigger>

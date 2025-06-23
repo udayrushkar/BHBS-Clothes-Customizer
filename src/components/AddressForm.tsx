@@ -43,8 +43,8 @@ export default function AddressMapForm() {
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen}>
       <CollapsibleTrigger className="w-full">
-    <div className="flex items-center justify-between p-4 bg-[#dedede]  rounded-lg shadow-sm border mb-6">
-        <h2 className="text-lg font-medium text-gray-900">
+    <div className="flex items-center justify-between p-1 bg-[#EEEEEE]   rounded-md shadow-sm border mb-6">
+        <h2 className="text-lg font-medium pl-2 text-gray-900">
               Location
             </h2>
             {isOpen ? (
