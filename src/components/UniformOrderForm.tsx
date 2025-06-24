@@ -304,7 +304,7 @@ export default function UniformOrderForm() {
                 />
               ): uniformType === "Warmer Jacket" ? (
                 <Warmerjacket
-                  color1={color?.value || "#94877e"}
+                  color1={color?.value || "#ffffff"}
                   logos={logos}
                   positions={positions}
                   setPositions={setPositions}
